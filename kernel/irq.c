@@ -1,7 +1,7 @@
 #include "common.h"
 #include "irq.h"
-#include "idt.h"  // <-- FIX: Include idt.h to know about idt_set_gate
-#include "pic.h"  // <-- FIX: Include the new pic.h instead of the .c file
+#include "idt.h"  // FIX: Include idt.h to know about idt_set_gate
+#include "pic.h"  // FIX: Include the new pic.h instead of the .c file
 
 // --- FIX: Extern the IRQ handlers from irq.asm ---
 extern void irq0(); extern void irq1(); extern void irq2(); extern void irq3();
